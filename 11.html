@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom Bing Search Box</title>
+</head>
+<body>
+  <div>
+    <h1>
+      Simple Search</h1>
+    <p>
+      The simple option displays results by opening
+      a new browser window that shows the Bing home page.
+    </p>
+    Search the ASP.NET site:
+    <br />
+    @Bing.SearchBox(siteUrl: "www.asp.net")
+  </div>
+  <div>
+    <h1>
+      Advanced Search Option</h1>
+    <p>
+      The advanced option shows search results directly
+      in this page.
+      You can specify options to format the results.
+    </p>
+    Search the ASP.NET site:
+    <br />
+    @Bing.AdvancedSearchBox(
+            siteUrl: "www.asp.net",
+            siteName: "ASP.NET Custom Search",
+            boxWidth: 300,
+            resultWidth: 600,
+            resultHeight: 500,
+            themeColor: "Green",
+            locale: "he-IL")
+  </div>
+</body>
+</html>
